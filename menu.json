@@ -1,0 +1,25 @@
+[
+  {
+    "id": "servicos-externos",
+    "name": "Serviços Externos",
+    "items": [
+      { "id": "suporte-tecnico", "name": "Suporte Técnico", "details": "Suporte ao utilizador, aplicacional e infraestruturas.", "description": "Assistência especializada para resolver problemas técnicos e garantir a continuidade do seu trabalho.", "icon": "Headphones", "features": ["Atendimento 24/7", "Suporte remoto", "Gestão de incidentes"], "sla": "4 horas" },
+      { "id": "comunicacoes", "name": "Comunicações", "details": "Comunicações unificadas, videoconferência, correio eletrónico.", "description": "Soluções integradas para manter a sua equipa conectada, onde quer que esteja.", "icon": "MessageSquare", "features": ["Videoconferência HD", "E-mail corporativo", "Chat em tempo real"], "sla": "2 horas" },
+      { "id": "infraestrutura", "name": "Infraestrutura e Postos de Trabalho", "details": "Postos de trabalho, Cloud, Alojamento, RPA.", "description": "Gestão completa da infraestrutura tecnológica e dos equipamentos de trabalho.", "icon": "Server", "features": ["Cloud Computing", "Alojamento seguro", "Gestão de RPA"], "sla": "8 horas" },
+      { "id": "desenvolvimento", "name": "Desenvolvimento e Manutenção de Aplicações", "details": "Aplicações da área social, estruturais, pensões, pagamentos.", "description": "Criação e manutenção de soluções de software à medida para as suas necessidades.", "icon": "Code", "features": ["Desenvolvimento à medida", "Manutenção preventiva", "Suporte a aplicações"], "sla": "24 horas" },
+      { "id": "formacao", "name": "Formação e Recursos", "details": "Formação a distância e presencial, recursos pedagógicos.", "description": "Capacitação contínua para garantir que a sua equipa domina as ferramentas tecnológicas.", "icon": "GraduationCap", "features": ["Formação online", "Workshops presenciais", "Recursos pedagógicos"], "sla": "48 horas" },
+      { "id": "gestao-informacao", "name": "Gestão de Informação", "details": "Sistemas de apoio à decisão, estatísticas, qualidade de dados.", "description": "Transformação de dados em conhecimento para apoiar a tomada de decisão.", "icon": "BarChart3", "features": ["Sistemas de BI", "Estatísticas avançadas", "Qualidade de dados"], "sla": "12 horas" }
+    ]
+  },
+  {
+    "id": "servicos-internos",
+    "name": "Serviços de Suporte Interno",
+    "items": [
+      { "id": "acreditacao", "name": "Acreditação de Software", "details": "Processos de acreditação.", "description": "Garantia de conformidade e qualidade para todas as aplicações internas.", "icon": "CheckCircle", "features": ["Auditorias", "Certificação", "Conformidade"], "sla": "72 horas" },
+      { "id": "administracao-bd", "name": "Administração de Bases de Dados", "details": "Gestão e administração de BD.", "description": "Manutenção, otimização e segurança das bases de dados corporativas.", "icon": "Database", "features": ["Otimização", "Backups", "Segurança"], "sla": "6 horas" },
+      { "id": "arquitetura-bd", "name": "Arquitetura de Bases de Dados", "details": "Arquitetura de BD.", "description": "Desenho e planeamento da estrutura das bases de dados para máxima performance.", "icon": "LayoutGrid", "features": ["Modelagem", "Planeamento", "Performance"], "sla": "24 horas" },
+      { "id": "administracao-com", "name": "Administração de Comunicações", "details": "Gestão de redes e comunicações.", "description": "Garantia de uma rede interna robusta, rápida e segura.", "icon": "Network", "features": ["Gestão de redes", "Segurança de rede", "Monitorização"], "sla": "4 horas" },
+      { "id": "helpdesk", "name": "Helpdesk", "details": "Suporte interno.", "description": "Ponto único de contacto para questões técnicas internas.", "icon": "LifeBuoy", "features": ["Atendimento interno", "Gestão de pedidos", "Suporte rápido"], "sla": "2 horas" }
+    ]
+  }
+]
