@@ -50,6 +50,26 @@ export default function CatalogDetails({ item }: CatalogDetailsProps) {
         </div>
       </div>
       
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        {item.responsible && (
+          <div className="bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm">
+            <h2 className="text-lg font-semibold text-zinc-900 mb-2">Responsável</h2>
+            <p className="text-zinc-600 font-medium">{item.responsible.name}</p>
+            <p className="text-zinc-500 text-sm">{item.responsible.email}</p>
+          </div>
+        )}
+        {item.securityRequirements && (
+          <div className="bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm">
+            <h2 className="text-lg font-semibold text-zinc-900 mb-2">Requisitos de Segurança</h2>
+            <ul className="list-disc list-inside text-zinc-600 text-sm">
+              {item.securityRequirements.map((req: string, index: number) => (
+                <li key={index}>{req}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
       <div className="mt-6 bg-zinc-900 text-white p-6 rounded-2xl shadow-sm">
         <h2 className="text-lg font-semibold mb-2">SLA (Service Level Agreement)</h2>
         <p className="text-zinc-300">Tempo de resposta garantido: <span className="font-bold text-white">{item.sla}</span></p>
