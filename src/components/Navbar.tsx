@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Menu, X, Search, ChevronDown, BarChart } from 'lucide-react';
+import { Menu, X, Search, ChevronDown, BarChart, Network } from 'lucide-react';
 
 const menuItems = [
   { name: 'Serviços Externos', sub: ['Suporte Técnico', 'Comunicações', 'Infraestrutura', 'Desenvolvimento', 'Formação', 'Gestão de Informação'] },
   { name: 'Serviços Internos', sub: ['Acreditação', 'Administração', 'Arquitetura', 'Helpdesk', 'Monitorização'] },
 ];
 
-export default function Navbar({ searchQuery, setSearchQuery, setView }: { searchQuery: string, setSearchQuery: (q: string) => void, setView: (v: 'catalog' | 'chart') => void }) {
+export default function Navbar({ searchQuery, setSearchQuery, setView }: { searchQuery: string, setSearchQuery: (q: string) => void, setView: (v: 'catalog' | 'chart' | 'graph') => void }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -30,6 +30,10 @@ export default function Navbar({ searchQuery, setSearchQuery, setView }: { searc
             <button onClick={() => setView('chart')} className="text-zinc-600 hover:text-zinc-900 flex items-center gap-2">
               <BarChart className="w-5 h-5" />
               Estatísticas
+            </button>
+            <button onClick={() => setView('graph')} className="text-zinc-600 hover:text-zinc-900 flex items-center gap-2">
+              <Network className="w-5 h-5" />
+              Mapa
             </button>
             {menuItems.map((item) => (
               <div key={item.name} className="relative group">

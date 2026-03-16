@@ -8,11 +8,12 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import CatalogDetails from './components/CatalogDetails';
 import DashboardChart from './components/DashboardChart';
+import MenuGraph from './components/MenuGraph';
 
 export default function App() {
   const [selectedItem, setSelectedItem] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const [view, setView] = useState<'catalog' | 'chart'>('catalog');
+  const [view, setView] = useState<'catalog' | 'chart' | 'graph'>('catalog');
 
   return (
     <div className="min-h-screen bg-zinc-50 flex flex-col">
@@ -24,8 +25,10 @@ export default function App() {
         <main className="flex-1 overflow-y-auto">
           {view === 'catalog' ? (
             <CatalogDetails item={selectedItem} />
-          ) : (
+          ) : view === 'chart' ? (
             <DashboardChart />
+          ) : (
+            <MenuGraph />
           )}
         </main>
       </div>
